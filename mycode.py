@@ -7,8 +7,12 @@ data={"Name":["Alice","Bob","Charlie"],
       
 
 }
+
 df=pd.DataFrame(data)
 
+new_loc={"Name":"Manav","Age":21,"City":"Delhi"}
+
+df.loc[len(df.index)]=new_loc
 data_dir="data"
 os.makedirs(data_dir,exist_ok=True)
 
